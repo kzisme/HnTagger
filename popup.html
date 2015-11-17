@@ -1,0 +1,36 @@
+  0 <!doctype html>                                                                      
+  1 <!--                                                                                 
+  2  This page is shown when the extension button is clicked, because the                
+  3  "browser_action" field in manifest.json contains the "default_popup" key with       
+  4  value "popup.html".                                                                 
+  5  -->                                                                                 
+  6 <html>                                                                               
+  7   <head>                                                                             
+  8     <title>Getting Started Extension's Popup</title>                                 
+  9     <style>                                                                          
+ 10       body {                                                                         
+ 11         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;                
+ 12         font-size: 100%;                                                             
+ 13       }                                                                              
+ 14       #status {                                                                      
+ 15         /* avoid an excessively wide status text */                                  
+ 16         white-space: pre;                                                            
+ 17         text-overflow: ellipsis;                                                     
+ 18         overflow: hidden;                                                            
+ 19         max-width: 400px;                                                            
+ 20       }                                                                              
+ 21     </style>                                                                         
+ 22                                                                                      
+ 23     <!--                                                                             
+ 24       - JavaScript and HTML must be in separate files: see our Content Security      
+ 25       - Policy documentation[1] for details and explanation.                         
+ 26       -                                                                              
+ 27       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy           
+ 28      -->                                                                             
+ 29     <script src="popup.js"></script>                                                 
+ 30   </head>                                                                            
+ 31   <body>                                                                             
+ 32     <div id="status"></div>                                                          
+ 33     <img id="image-result" hidden>                                                   
+ 34   </body>                                                                            
+ 35 </html>    
