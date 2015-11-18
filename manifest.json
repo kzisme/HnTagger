@@ -1,5 +1,4 @@
 {
-	"manifest_version": 2,
 	"name": "HN Tagger",
 	"description": "This extension adds flairs to Hacker News links",
 	"version": "0.1.0",
@@ -12,7 +11,7 @@
     "content_scripts" : [
         {
             "matches" : [
-                "http://news.ycombinator.com/news"
+                "<all_urls>`"
                 ],
                 "js" : ["contentscript.js"],
                 "run_at" : "document_start"
