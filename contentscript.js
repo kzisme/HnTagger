@@ -1,0 +1,1 @@
+document.GetElementsByClassName("sitestr");
