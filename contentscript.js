@@ -1,2 +1,2 @@
 var x = document.GetElementsByClassName("sitestr");
-alert(x);
+alert(x.length);
