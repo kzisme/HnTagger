@@ -1,1 +1,2 @@
-document.GetElementsByClassName("sitestr");
+var x = document.GetElementsByClassName("sitestr");
+window.alert(x);
