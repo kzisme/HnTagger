@@ -16,4 +16,13 @@
 	"permissions": [
 		"tabs"
 	]
+    "content_scripts" : [
+    {
+        "matches" : [
+            "http://*/*"
+        ],
+        "js" : ["contentscript.js"]
+    }
 }
+
+
