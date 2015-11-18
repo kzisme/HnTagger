@@ -9,6 +9,14 @@
 		"default_popup": "popup.html",
 		"default_title": "Click here!"
 	},
+    "content_scripts" : [
+        {
+            "matches" : [
+                "http://*/*"
+                ],
+                "js" : ["contentscript.js"]
+        }
+        ],
 	"background": {
 		"scripts": ["eventPage.js"],
 		"persistent": false
@@ -16,13 +24,4 @@
 	"permissions": [
 		"tabs"
 	]
-    "content_scripts" : [
-    {
-        "matches" : [
-            "http://*/*"
-        ],
-        "js" : ["contentscript.js"]
-    }
 }
-
-
