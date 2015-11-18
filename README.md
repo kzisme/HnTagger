@@ -14,9 +14,9 @@ Post titles will be searched for common themes and appended to the line.
 ## || Documentation ||
 The first iteration of this project will likely accomplish:
 1. Successful parsing of CSS selectors to generate tags.
-- sitestr - to grab the source url.
-- rank  - to grab the post number/page.
-- title - to grab/parse for recognizable words.
+ - sitestr - to grab the source url.
+ - rank  - to grab the post number/page.
+ - title - to grab/parse for recognizable words.
 2. Successfully appending tags to existing <div>s
 3. Accomplishing 1 and 2 on every new page.
 
