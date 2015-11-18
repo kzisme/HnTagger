@@ -1,2 +1,2 @@
 var x = document.getElementsByClassName("sitestr");
-console.log(x);;
+console.log(x);
