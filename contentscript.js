@@ -1,2 +1,2 @@
-var x = document.GetElementsByClassName("sitestr");
-alert(x.length);
+var x = document.getElementsByClassName("sitestr");
+console.log(x);;
