@@ -23,6 +23,6 @@
 		"persistent": false
 	},
 	"permissions": [
-		"tabs"
+		"tabs", "<all_urls>"
 	]
 }
