@@ -13,6 +13,7 @@ Post titles will be searched for common themes and appended to the line.
 
 ## || Documentation ||
 The first iteration of this project will likely accomplish:
+
 1. Successful parsing of CSS selectors to generate tags.
  - sitestr - to grab the source url.
  - rank  - to grab the post number/page.
