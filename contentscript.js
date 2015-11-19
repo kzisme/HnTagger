@@ -1,2 +1,2 @@
-var x = document.getElementsByClassName("events");
+var x = document.getElementsByClassName("sitestr");
 console.log(x);
