@@ -1,4 +1,11 @@
-var x = document.getElementsByClassName("sitestr");
-for (var i = 0; i < x.length; i++){
-    console.log(x[i]);
+var site = document.getElementsByClassName("sitestr");
+for (var i = 0; i < site.length; i++){
+    console.log(site[i]);
 }
+
+var rank = document.getElementsByClassName("rank");
+for (var i = 0; i < rank.length; i++){
+    console.log(rank[i]);
+}
+
+
