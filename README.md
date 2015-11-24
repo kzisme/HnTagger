@@ -20,6 +20,7 @@ The first iteration of this project will likely accomplish:
 - [ ] title - to grab/parse for recognizable words.
 2. Successfully appending tags to existing div's
 3. Accomplishing 1 and 2 on every new page.
+4. Sorting posts based on tags.
 
 (Note: XPath's may be used for this as well - but currently seem overkill since
 the selectors already exist.  If we were searching for elements within the DOM
