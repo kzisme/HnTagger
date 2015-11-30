@@ -12,6 +12,5 @@ for (var i = 0; i < site.length; i++){
 
 var table = document.getElementsByClassName("athing");
 for (var i = 0; i < table.length; i++){
-    console.log(table[i]);
-    //table[i].appendChild(tags[i]);
+    table[i].appendChild(tags[i]);
 }
