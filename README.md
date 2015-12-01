@@ -15,9 +15,9 @@ Post titles will be searched for common categories and appended to the row.
 The first iteration of this project will likely accomplish:
 
 1. Successful parsing of CSS selectors to generate tags.
-        - [x] sitestr - to grab the source url.
-        - [x]  rank  - to grab the correct post number per page.
-        - [ ] title - to grab/parse for recognizable words.
+- [x] sitestr - to grab the source url.
+- [x]  rank  - to grab the correct post number per page.
+- [ ] title - to grab/parse for recognizable words.
 2. Successfully appending tags to existing div's
 3. Accomplishing 1 and 2 on every new page.
 4. Sorting posts based on tags - Also ignoring posts based on their source.
