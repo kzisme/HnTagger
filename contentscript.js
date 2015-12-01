@@ -1,5 +1,6 @@
 var tags = new Array();
 var entries = document.getElementsByClassName("athing");
+
 for (var i = 0; i < entries.length; i++){
     var rank = entries[i].getElementsByClassName("rank");
     var tag = document.createTextNode(rank[0].textContent + " ");
