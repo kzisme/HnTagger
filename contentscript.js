@@ -1,4 +1,3 @@
-var tags = new Array();
 var entries = document.getElementsByClassName("athing");
  
 for (var i = 0; i < entries.length; i++){
@@ -9,8 +8,6 @@ for (var i = 0; i < entries.length; i++){
     var rankElements = entries[i].getElementsByClassName("rank");
     // Create a new text node to hold the rank text
     var rankText = document.createTextNode(rankElements[0].textContent);
-    // Save the rankText for later I guess?
-    tags.push(rankText);
  
     // Get the elements with class 'sitestr' from the current entry
     var siteElements = entries[i].getElementsByClassName("sitestr");    
