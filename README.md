@@ -1,6 +1,6 @@
 # HnTagger
 
-A Chrome plugin to add tags to [Hacker News](http://www.hackernews.org/) 
+A Chrome plugin to add tags to [Hacker News](http://news.ycombinator.com/) 
 links similar to reddit submission flair.s
 
 Post titles will be searched for common categories and appended to the row.
