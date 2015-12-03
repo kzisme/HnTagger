@@ -16,7 +16,7 @@ The first iteration of this project will likely accomplish:
 
 1. Successful parsing of CSS selectors to generate tags.
 - [x] sitestr - to grab the source url.
-- [x]  rank  - to grab the correct post number per page.
+- [x] rank  - to grab the correct post number per page.
 - [ ] title - to grab/parse for recognizable words.
 2. Successfully appending tags to existing div's
 3. Accomplishing 1 and 2 on every new page.
@@ -31,5 +31,5 @@ it may be useful to use XPaths)
 Notes:
 
 - If your contentscript.js file is not running (but is valid js) check your
-  manifest.json file to see how/when your script is being ran (document_end).
+  manifest.json file to see how/when your script is being run (document_end).
   
