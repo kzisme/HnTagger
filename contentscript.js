@@ -2,7 +2,7 @@ var entries = document.getElementsByClassName("athing");
  
 for (var i = 0; i < entries.length; i++){
     // Create a new div container to work with
-    var container = document.createElement("div");
+    var container = document.createElement("ncolor");
  
     // Get the elements with class 'rank' from the current entry
     var rankElements = entries[i].getElementsByClassName("rank");
