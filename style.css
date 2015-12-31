@@ -3,6 +3,20 @@ ncolor{
     border-color: #fd850a; 
     font-family: Verdana, Geneva, sans-serif;
     font-size: 10pt;
+    color: #000000;
+
+    background-image: -webkit-gradient(
+	    linear,
+	    right top,
+	    left top,
+	    color-stop(1, #FF8C3F)
+    );
+    background-image: -o-linear-gradient(left, #FF8C3F 100%);
+    background-image: -moz-linear-gradient(left, #FF8C3F 100%);
+    background-image: -webkit-linear-gradient(left, #FF8C3F 100%);
+    background-image: -ms-linear-gradient(left, #FF8C3F 100%);
+    background-image: linear-gradient(to left, #FF8C3F 100%);
 }
+
 
 

@@ -26,7 +26,9 @@ The first iteration of this project will likely accomplish:
 the selectors already exist.  If we were searching for elements within the DOM
 it may be useful to use XPaths)
 
-
+Color Palette:
+Light Orange:ff8c3f 
+Dark Orange:ff8c00
 
 Notes:
 
