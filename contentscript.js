@@ -7,7 +7,7 @@ for (var i = 0; i < entries.length; i++){
     // Get the elements with class 'rank' from the current entry
     var rankElements = entries[i].getElementsByClassName("rank");
     // Create a new text node to hold the rank text
-    var rankText = document.createTextNode(rankElements[0].textContent);
+    var rankText = document.createTextNode(rankElements[0].textContent + " ");
  
     // Get the elements with class 'sitestr' from the current entry
     var siteElements = entries[i].getElementsByClassName("sitestr");    
