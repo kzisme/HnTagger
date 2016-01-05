@@ -12,10 +12,10 @@ for (var i = 0; i < entries.length; i++){
     // Get the elements with class 'sitestr' from the current entry
     var siteElements = entries[i].getElementsByClassName("sitestr");    
     // If you got some elements, add the contents of the first one to rankText
-    if (siteElements) {
+    if (siteElements.length > 0) {
         rankText.textContent += siteElements[0].textContent + " ";
+        
     }
-if(siteElements.length >= 0){ 
 	var sitebit = entries[i].getElementsByClassName("sitebit")[0];
   
     	// Put the text node into the container
@@ -23,5 +23,4 @@ if(siteElements.length >= 0){
 
 		// Put the new div into the current entry
 		sitebit.parentNode.insertBefore(container, sitebit.nextSibling);
-	}
 }
