@@ -12,6 +12,7 @@ for (var i = 0; i < entries.length; i++){
     // Get the elements with class 'sitestr' from the current entry
     var siteElements = entries[i].getElementsByClassName("sitestr");    
     // If you got some elements, add the contents of the first one to rankText
+    // Check to see if the ~News~ tag should be added
     if (siteElements.length > 0) {
         rankText.textContent += siteElements[0].textContent + " ";
         
@@ -20,6 +21,7 @@ for (var i = 0; i < entries.length; i++){
     container.appendChild(rankText);
 
     var sitebit = entries[i].getElementsByClassName("sitebit")[0];
+    // Checks to see where the tag should be added
     if (sitebit == undefined) {
          sitebit = entries[i].getElementsByTagName("a")[0];
     }
