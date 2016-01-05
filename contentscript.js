@@ -16,11 +16,13 @@ for (var i = 0; i < entries.length; i++){
         rankText.textContent += siteElements[0].textContent + " ";
         
     }
-    var sitebit = entries[i].getElementsByClassName("sitebit")[0];
-  
     // Put the text node into the container
     container.appendChild(rankText);
 
+    var sitebit = entries[i].getElementsByClassName("sitebit")[0];
+    if (sitebit == undefined) {
+         sitebit = entries[i].getElementsByTagName("a")[0];
+    }
     // Put the new div into the current entry
     sitebit.parentNode.insertBefore(container, sitebit.nextSibling);
 }
