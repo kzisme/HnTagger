@@ -1,5 +1,5 @@
 var entries = document.getElementsByClassName("athing");
- 
+
 for (var i = 0; i < entries.length; i++){
     // Create a new div container to work with
     var container = document.createElement("ncolor");
@@ -15,10 +15,13 @@ for (var i = 0; i < entries.length; i++){
     if (siteElements) {
         rankText.textContent += siteElements[0].textContent + " ";
     }
- 
-    // Put the text node into the container
-    container.appendChild(rankText);
- 
-    // Put the new div into the current entry
-    entries[i].appendChild(container);
+if(siteElements.length >= 0){ 
+	var sitebit = entries[i].getElementsByClassName("sitebit")[0];
+  
+    	// Put the text node into the container
+		container.appendChild(rankText);
+
+		// Put the new div into the current entry
+		sitebit.parentNode.insertBefore(container, sitebit.nextSibling);
+	}
 }
