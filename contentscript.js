@@ -1,4 +1,9 @@
 var entries = document.getElementsByClassName("athing");
+var tagLine = ["js","javascript","andriod"];
+
+	if(tagLine > 0){
+		tagLine.includes(document.querySelector("td.title").textContent).toLowerCase();
+	}
 
 for (var i = 0; i < entries.length; i++){
     // Create a new div container to work with
