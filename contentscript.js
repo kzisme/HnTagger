@@ -1,5 +1,13 @@
 var entries = document.getElementsByClassName("athing");
-var tagLine = ["js","javascript","andriod"];
+
+// This is where ~tag words~ that useres may be interested in are listed
+// Ideally users will be able to add/delete to this in a later version.
+
+var tagLine = [
+    "js",
+    "javascript",
+    "andriod"
+];
 
 	if(tagLine.length > 0){
 		tagLine.includes(document.querySelector("td.title").textContent.toLowerCase());
