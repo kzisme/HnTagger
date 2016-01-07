@@ -13,9 +13,12 @@ var tagLine = [
 		tagLine.includes(document.querySelector("td.title").textContent.toLowerCase());
         // If this returns...one of the items were included? I think?
         console.log("hellz yeahhh");
-// We are going to end up using .map since we will probably have to map and know which elements were matched to specific selectors
-// `['foo','baz'].find(s => s.indexOf('ba') > -1).map(s => {var el = document.createElement('div'); el.textContent = s; return el})
-    }
+
+        // We are going to end up using .map since we will probably have to map
+        // and know which elements were matched to specific selectors
+
+        // `['foo','baz'].find(s => s.indexOf('ba') > -1).map(s => {var el = document.createElement('div'); el.textContent = s; return el})
+        }
 
 for (var i = 0; i < entries.length; i++){
     // Create a new div container to work with
