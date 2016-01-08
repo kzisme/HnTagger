@@ -1,5 +1,13 @@
 var entries = document.getElementsByClassName("athing");
 
+for (var i = 0; i < entries.length; i++){
+    // Create new element for keyword/tag
+    var holdme = document.createElement("tcolor");
+
+
+
+}
+
 // This is where ~tag words~ that useres may be interested in are listed
 // Ideally users will be able to add/delete to this in a later version.
 
