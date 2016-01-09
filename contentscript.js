@@ -17,17 +17,21 @@ for (var i = 0; i < entries.length; i++){
  
     // Get the elements with class 'rank' from the current entry
     var rankElement = entries[i].getElementsByClassName("rank");
+
     // Create a new text node to hold the rank text
     var tagText = document.createTextNode(rankElement[0].textContent + " ");
  
     // Get the elements with class 'sitestr' from the current entry
     var siteElement = entries[i].getElementsByClassName("sitestr");    
+   
     // If you got some elements, add the contents of the first one to tagText
     // Check to see if the ~News~ tag should be added
     if (siteElement.length > 0) {
         tagText.textContent += siteElement[0].textContent + " ";
     }
-
+    
+    // Loops through the links on the page and finds the "Title"
+    // Then compares each title to the array tagLine.
     var titleElement = entries[i].getElementsByTagName("a")[1].innerHTML;
     for (var j = 0; j < tagLine.length; j++) {
         if (titleElement.toLowerCase().indexOf(tagLine[j]) > -1) {
