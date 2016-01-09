@@ -45,6 +45,8 @@ for (var i = 0; i < entries.length; i++){
     var sitebit = entries[i].getElementsByClassName("sitebit")[0];
     // Checks to see where the tag should be added
     if (sitebit == undefined) {
+        // This breaks on ASK HN posts since there is no link to append
+        // and that is what we are searching from currently.
          sitebit = entries[i].getElementsByTagName("a")[0];
     }
     
