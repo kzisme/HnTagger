@@ -13,6 +13,7 @@ var tagLine = [
 for (var i = 0; i < entries.length; i++){
     // Create a new div container to work with
     var container = document.createElement("ncolor");
+    var titleContainer = document.createElement("tcolor");
  
     // Get the elements with class 'rank' from the current entry
     var rankElement = entries[i].getElementsByClassName("rank");
