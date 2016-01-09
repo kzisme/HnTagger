@@ -3,9 +3,6 @@ var entries = document.getElementsByClassName("athing");
 for (var i = 0; i < entries.length; i++){
     // Create new element for keyword/tag
     var holdme = document.createElement("tcolor");
-
-
-
 }
 
 // This is where ~tag words~ that useres may be interested in are listed
@@ -14,19 +11,19 @@ for (var i = 0; i < entries.length; i++){
 var tagLine = [
     "js",
     "javascript",
-    "andriod"
+    "android"
 ];
 
-	if(tagLine.length > 0){
-		tagLine.includes(document.querySelector("td.title").textContent.toLowerCase());
-        // If this returns...one of the items were included? I think?
-        console.log("hellz yeahhh");
+if(tagLine.length > 0){
+    tagLine.includes(document.querySelector("td.title").textContent.toLowerCase());
+    // If this returns...one of the items were included? I think?
+    console.log("hellz yeahhh");
 
-        // We are going to end up using .map since we will probably have to map
-        // and know which elements were matched to specific selectors
+    // We are going to end up using .map since we will probably have to map
+    // and know which elements were matched to specific selectors
 
-        // `['foo','baz'].find(s => s.indexOf('ba') > -1).map(s => {var el = document.createElement('div'); el.textContent = s; return el})
-        }
+    // `['foo','baz'].find(s => s.indexOf('ba') > -1).map(s => {var el = document.createElement('div'); el.textContent = s; return el})
+}
 
 for (var i = 0; i < entries.length; i++){
     // Create a new div container to work with
