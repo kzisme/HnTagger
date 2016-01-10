@@ -42,7 +42,6 @@ for (var i = 0; i < entries.length; i++){
 
     // Put the text node into the container
     container.appendChild(tagText);
-    sitebit.parentNode.insertBefore(titleContainer, container);
 
     var sitebit = entries[i].getElementsByClassName("sitebit")[0];
     // Checks to see where the tag should be added
@@ -54,4 +53,5 @@ for (var i = 0; i < entries.length; i++){
     
     // Put the new div into the current entry
     sitebit.parentNode.insertBefore(container, sitebit.nextSibling);
+    sitebit.parentNode.insertBefore(titleContainer, container.nextSibling);
 }
