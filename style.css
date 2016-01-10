@@ -22,4 +22,29 @@ ncolor{
     background-image: linear-gradient(to left, #FF8C3F 100%);
 }
 
+tcolor{
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 8pt;
+    color: #000000;
+    margin-left: 5px;
 
+    border-radius: 25px;
+    padding: 1.5px;
+	background-image: -webkit-gradient(
+	    linear,
+	    right top,
+	    left top,
+	    color-stop(1, #FF8C3F)
+    );
+    background-image: -o-linear-gradient(left, #FF8C3F 100%);
+    background-image: -moz-linear-gradient(left, #FF8C3F 100%);
+    background-image: -webkit-linear-gradient(left, #FF8C3F 100%);
+    background-image: -ms-linear-gradient(left, #FF8C3F 100%);
+    background-image: linear-gradient(to left, #FF8C3F 100%);
+
+
+
+}
