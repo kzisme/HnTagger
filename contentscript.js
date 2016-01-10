@@ -7,7 +7,8 @@ var tagLine = [
     "js",
     "javascript",
     "android",
-    "images"
+    "images",
+    "park"
 ];
 
 for (var i = 0; i < entries.length; i++){
@@ -35,12 +36,13 @@ for (var i = 0; i < entries.length; i++){
     var titleElement = entries[i].getElementsByTagName("a")[1].innerHTML;
     for (var j = 0; j < tagLine.length; j++) {
         if (titleElement.toLowerCase().indexOf(tagLine[j]) > -1) {
-            tagText.textContent += tagLine[j] + " ";
+            titleContainer.textContent += tagLine[j] + " ";
         }
     }
 
     // Put the text node into the container
     container.appendChild(tagText);
+    sitebit.parentNode.insertBefore(titleContainer, container);
 
     var sitebit = entries[i].getElementsByClassName("sitebit")[0];
     // Checks to see where the tag should be added
