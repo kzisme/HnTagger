@@ -1,5 +1,3 @@
-var entries = document.getElementsByClassName("athing");
-
 // This is where ~tag words~ that useres may be interested in are listed
 // Ideally users will be able to add/delete to this in a later version.
 
@@ -9,54 +7,43 @@ var tagLine = [
     "android",
     "images",
     "park",
-    "change"
+    "change",
+    "web"
 ];
 
-for (var i = 0; i < entries.length; i++){
-    // Create a new div container to work with
+Array.prototype.slice.call(document.getElementsByClassName("athing")).
+	forEach(function(thing) {
+    // Create elements to be appended (change to valid HTML later)
     var container = document.createElement("ncolor");
     var titleContainer = document.createElement("tcolor");
- 
-    // Get the elements with class 'rank' from the current entry
-    var rankElement = entries[i].getElementsByClassName("rank");
 
-    // Create a new text node to hold the rank text
-    var tagText = document.createTextNode(rankElement[0].textContent + " ");
+    // Create an array to hold the rank text
+    var tagTextArr = [thing.getElementsByClassName("rank")[0].textContent];
  
     // Get the elements with class 'sitestr' from the current entry
-    var siteElement = entries[i].getElementsByClassName("sitestr");    
+    var siteElement = thing.getElementsByClassName("sitestr");    
    
     // If you got some elements, add the contents of the first one to tagText
     // Check to see if the ~News~ tag should be added
     if (siteElement.length > 0) {
-        tagText.textContent += siteElement[0].textContent + " ";
+        tagTextArr.push(siteElement[0].textContent);
     }
     
+    // Create a text node and put it into the container
+	// Joins an element of the array tagTextArr with a " "
+    container.appendChild(document.createTextNode(tagTextArr.join(" ")));
+
     // Loops through the links on the page and finds the "Title"
     // Then compares each title to the array tagLine.
-    if (siteElement.length > 0){
-        var titleElement = entries[i].getElementsByTagName("a")[1].innerHTML;
-        for (var j = 0; j < tagLine.length; j++) {
-            if (titleElement.toLowerCase().indexOf(tagLine[j]) > -1) {
-                titleContainer.textContent += tagLine[j] + " ";
-            }
-        }
-    }
-
-    // Put the text node into the container
-    container.appendChild(tagText);
-
-    var sitebit = entries[i].getElementsByClassName("sitebit")[0];
-    // Checks to see where the tag should be added
-    if (sitebit == undefined) {
-        // This breaks on ASK HN posts since there is no link to append
-        // and that is what we are searching from currently.
-         sitebit = entries[i].getElementsByTagName("a")[0];
-    }
+    var titleTd = thing.getElementsByClassName("title")[1]
+    var titleText = titleTd.innerHTML;
     
-    // Put the new div into the current entry
-    sitebit.parentNode.insertBefore(container, sitebit.nextSibling);
-    if (titleContainer.textContent.length != 0){
-        sitebit.parentNode.insertBefore(titleContainer, container.nextSibling);
+    titleContainer.textContent += tagLine.filter(function(tag) {
+    	return titleText.toLowerCase().indexOf(tag) != -1;
+    }).join(" ");
+    
+    titleTd.appendChild(container);
+    if (titleContainer.textContent.length > 0) {
+        titleTd.appendChild(titleContainer);
     }
-}
+});
