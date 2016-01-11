@@ -54,7 +54,7 @@ for (var i = 0; i < entries.length; i++){
     
     // Put the new div into the current entry
     sitebit.parentNode.insertBefore(container, sitebit.nextSibling);
-    if (titleContainer.length != 0){
+    if (titleContainer.textContent.length != 0){
     sitebit.parentNode.insertBefore(titleContainer, container.nextSibling);
     }
 }
