@@ -34,10 +34,12 @@ for (var i = 0; i < entries.length; i++){
     
     // Loops through the links on the page and finds the "Title"
     // Then compares each title to the array tagLine.
-    var titleElement = entries[i].getElementsByTagName("a")[1].innerHTML;
-    for (var j = 0; j < tagLine.length; j++) {
-        if (titleElement.toLowerCase().indexOf(tagLine[j]) > -1) {
-            titleContainer.textContent += tagLine[j] + " ";
+    if (siteElement.length > 0){
+        var titleElement = entries[i].getElementsByTagName("a")[1].innerHTML;
+        for (var j = 0; j < tagLine.length; j++) {
+            if (titleElement.toLowerCase().indexOf(tagLine[j]) > -1) {
+                titleContainer.textContent += tagLine[j] + " ";
+            }
         }
     }
 
