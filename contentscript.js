@@ -20,15 +20,6 @@ Array.prototype.slice.call(document.getElementsByClassName("athing")).
     // Create an array to hold the rank text
     var rankSiteArr = [thing.getElementsByClassName("rank")[0].textContent];
  
-    // Get the elements with class 'sitestr' from the current entry
-    var siteElement = thing.getElementsByClassName("sitestr");    
-   
-    // If you got some elements, add the contents of the first one to tagText
-    // Check to see if the ~News~ tag should be added
-    if (siteElement.length > 0) {
-        rankSiteArr.push(siteElement[0].textContent);
-    }
-
     // Create a text node and put it into the container of the rank and site
     // Joins an element of the array rankSiteArr with a " "
     rankSiteContainer.appendChild(document.createTextNode(rankSiteArr.join(" ")));
