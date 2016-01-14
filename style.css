@@ -52,7 +52,7 @@ tcolor{
     border-width: 1px;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 8pt;
-    color: #000000;
+    color: #000000 !important;
     margin-left: 5px;
 
     border-radius: 25px;
@@ -71,5 +71,8 @@ tcolor{
 	a{
         color: #000000;
 	}
+    
 }
-
+.sitestr{
+	color:#000000;
+}	
