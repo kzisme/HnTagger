@@ -17,9 +17,6 @@ Array.prototype.slice.call(document.getElementsByClassName("athing")).
     var rankSiteContainer = document.createElement("ncolor");
     var titleContainer = document.createElement("tcolor");
 
-    // Create an array to hold the rank text
-    var rankSiteArr = [thing.getElementsByClassName("rank")[0].textContent];
- 
     // Create a text node and put it into the container of the rank and site
     // Joins an element of the array rankSiteArr with a " "
     rankSiteContainer.appendChild(document.createTextNode(rankSiteArr.join(" ")));
