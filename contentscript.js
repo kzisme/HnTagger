@@ -5,10 +5,15 @@ var tagKeyWords = [
     "js",
     "javascript",
     "android",
-    "images",
-    "park",
-    "change",
-    "web"
+    "python",
+    "ruby",
+    "java",
+    "c#",
+    "C++",
+    "php",
+    "sql",
+    "vim"
+
 ];
 
 Array.prototype.slice.call(document.getElementsByClassName("athing")).
