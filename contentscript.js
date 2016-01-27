@@ -2,6 +2,7 @@
 // Ideally users will be able to add/delete to this in a later version.
 
 var tagKeyWords = [
+    "css",
     "js",
     "javascript",
     "android",
@@ -19,12 +20,7 @@ var tagKeyWords = [
 Array.prototype.slice.call(document.getElementsByClassName("athing")).
     forEach(function(thing) {
     // Create elements to be appended (change to valid HTML later)
-    var rankSiteContainer = document.createElement("ncolor");
     var titleContainer = document.createElement("tcolor");
-
-    // Create a text node and put it into the container of the rank and site
-    // Joins an element of the array rankSiteArr with a " "
-    rankSiteContainer.appendChild(document.createTextNode(rankSiteArr.join(" ")));
 
     // Loops through the links on the page and finds the "Title"
     // Then compares each title to the array tagKeyWords.
@@ -35,7 +31,6 @@ Array.prototype.slice.call(document.getElementsByClassName("athing")).
         return titleText.toLowerCase().indexOf(tag) != -1;
     }).join(" ");
 
-    titleTd.appendChild(rankSiteContainer);
     if (titleContainer.textContent.length > 0) {
         titleTd.appendChild(titleContainer);
     }
